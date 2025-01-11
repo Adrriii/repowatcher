@@ -20,7 +20,7 @@ const repoBranch = (path) => {
 const getRepoText = async (path) => {
 	const branch = await repoBranch(path);
 
-	return (chalk.greenBright(path.split('/').pop()) + ':' + chalk.gray(branch)).padEnd('50', ' ');
+	return (chalk.greenBright(path.split('/').pop()) + ':' + chalk.gray(branch)).padEnd('55', ' ');
 }
 
 const getRepoStatusText = async (path) => {
